@@ -16,5 +16,4 @@ public class FindElementTest {
         driver.findElement(By.cssSelector("#user-name"));
         driver.quit();
     }
-    
 }
