@@ -14,7 +14,5 @@ public class ElementInteractions {
 
     @Test
     public void Variables()
-    {
-        
-    }
+     {}  
 }
