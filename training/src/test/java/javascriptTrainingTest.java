@@ -2,6 +2,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.Set;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,6 +20,11 @@ public class javascriptTrainingTest
     driver = new ChromeDriver();
     }
 
+   @After
+   public void tearDown()
+   {
+    driver.quit();
+   } 
 
     @Test
     public void JavascriptTraining()   
