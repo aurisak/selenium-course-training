@@ -20,7 +20,6 @@ public class UpperMenuTest {
     @Before
     public void setUp() {
         driver = new ChromeDriver();
-        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
 
     @After
@@ -37,13 +36,7 @@ public class UpperMenuTest {
 
         driver.get("http://automationpractice.com/index.php?id_category=3&controller=category");
 
-
-        // WebElement women = driver.findElement(By.xpath("//*[@id='block_top_menu']/ul/li/a[@title=('Women')]"));
         WebElement women = driver.findElement(womenMenuSelector);
-        // WebElement dresses =
-        // driver.findElement(By.xpath("a[contains(text(),'Dresses')]"));
-        // WebElement womensProductsDashboard =
-        // driver.findElement(By.className("cat-name[contains(text(),'Women')]"));
 
         action.moveToElement(women).perform();
         WebElement womenHover = driver.findElement(womenHoverSelector);
